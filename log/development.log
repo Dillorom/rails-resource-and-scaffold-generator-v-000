@@ -159,3 +159,29 @@ Processing by ArticlesController#update as HTML
   [1m[36m (2.7ms)[0m  [1mcommit transaction[0m
 Redirected to http://165.227.31.208:56710/articles/1
 Completed 302 Found in 7ms (ActiveRecord: 3.1ms)
+
+
+Started GET "/articles/1" for 73.254.230.154 at 2018-07-30 17:30:32 +0000
+Cannot render console from 73.254.230.154! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mArticle Load (0.1ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered articles/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 15ms (Views: 14.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/articles" for 73.254.230.154 at 2018-07-30 17:30:33 +0000
+Cannot render console from 73.254.230.154! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 15ms (Views: 14.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/articles/1" for 73.254.230.154 at 2018-07-30 17:30:42 +0000
+Cannot render console from 73.254.230.154! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mArticle Load (0.1ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered articles/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 14ms (Views: 12.9ms | ActiveRecord: 0.1ms)
